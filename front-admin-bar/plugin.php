@@ -9,7 +9,7 @@
             );
         }
     
-        public function  siteHead(){
+        public function  siteBodyBegin(){
  
             $login = new Login();
              
