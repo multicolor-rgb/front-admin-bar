@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://unicons.iconscout.com/release/v4.0.0/css/line.css');
+ body{
+margin-top:40px !important;
+}
+.m-toper{
+    position: fixed;
+    top:0;
+    width:100%;
+    height:40px;
+    background: #000;
+    z-index: 1999;
+    color:#fff;
+    font-size:14px !important;
+    font-family: 'Lato', sans-serif;
+}
+
+.m-toper-wrapper{
+    width:80rem;
+    margin:0 auto;
+    display:grid;
+    align-items: center;
+    height: 100%;
+grid-template-columns: 1fr 1fr;
+    
+}
+
+.m-toper p,.m-toper a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.m-toper-wrapper a{
+    color:#fff;
+    margin: 0;
+    padding: 0;
+}
+
+.m-toper-left{
+    display: flex;
+  
+}
+
+.m-toper-right{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.m-toper-user{
+ 
+    margin-right:10px;
+border-right:solid 2px rgba(255,255,255,0.3);
+padding-right:10px;
+}
+
+.m-toper .uil{
+    padding:0; 
+    margin:0;
+    margin-left:3px;
+}
+.m-toper a{
+    transition: all 250ms linear;
+}
+.m-toper a:hover{
+    opacity:0.8;
+}
+
+.m-toper-mr{
+    margin-right:15px !important;
+    display: block;
+}
+
+.navbar.fixed-top{
+    top:40px;
+}
