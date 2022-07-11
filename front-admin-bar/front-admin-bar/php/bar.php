@@ -26,19 +26,8 @@ if($this->getValue('color')!==''){
 <div class="m-toper-wrapper">
 
 <div class="m-toper-left">
-<span class="m-toper-user"><i class="uil uil-user-circle"></i> <?php echo Session::get('username');?></span>
-
-<?php
-global $WHERE_AM_I;
-
-if($WHERE_AM_I=='page'){
-    echo '<a class="m-toper-mr" href="'.DOMAIN.'/admin/edit-content/'.$page->key().'">'.$language->get('edit').'<i class="uil uil-edit"></i></a>';
-}else{
-    echo '';
-}
-
-;?>
-
+<span class="m-toper-user"><i class="uil uil-user-circle"></i> <?php echo $page->username();?></span>
+<a class="m-toper-mr" href="<?php echo DOMAIN;?>/admin/edit-content/<?php echo $page->key();?>"><?php echo $language->get('edit'); ?> <i class="uil uil-edit"></i></a>
 <a href="<?php echo DOMAIN;?>/admin/new-content/" class="m-toper-mr"><?php echo $language->get('new-content'); ?><i class="uil uil-plus-circle"></i></a>
 <a href="<?php echo DOMAIN;?>/admin/content/" class="m-toper-mr"><?php echo $language->get('content'); ?> <i class="uil uil-list-ul"></i></a>
 </div>
