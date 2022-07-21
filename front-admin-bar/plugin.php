@@ -42,6 +42,8 @@
 
             <option value="top" '.($this->getValue('position')==="top"?"selected":"").'>Top</option>
             <option value="bottom" '.($this->getValue('position')==="bottom"?"selected":"").'>Bottom</option>
+            <option value="left" '.($this->getValue('position')==="left"?"selected":"").'>Left</option>
+            <option value="right" '.($this->getValue('position')==="right"?"selected":"").'>Right</option>
 
             </select>
 
