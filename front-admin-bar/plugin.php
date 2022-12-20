@@ -20,8 +20,14 @@
                 global $user;
                 global $language;
 
-                include($this->phpPath().'php/bar.php');
-                
+
+$url =  $_SERVER['REQUEST_URI'] ;
+
+if (strpos($url,'preview=') == false) {
+    include($this->phpPath().'php/bar.php');
+};
+
+
             };
 
         }

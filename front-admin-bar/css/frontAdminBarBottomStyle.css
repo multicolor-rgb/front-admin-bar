@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://unicons.iconscout.com/release/v4.0.0/css/line.css');
 
 .m-toper{
     position: fixed;
@@ -37,6 +36,7 @@ grid-template-columns: 1fr 1fr;
 
 .m-toper-left{
     display: flex;
+
   
 }
 
@@ -52,13 +52,18 @@ grid-template-columns: 1fr 1fr;
     margin-right:10px;
 border-right:solid 2px rgba(255,255,255,0.3);
 padding-right:10px;
+display:flex;
+align-items:center;
 }
 
-.m-toper .uil{
-    padding:0; 
-    margin:0;
-    margin-left:3px;
-}
+
+.m-toper img{
+    width:17px;
+    margin:5px;
+    }
+    
+    
+
 .m-toper a{
     transition: all 250ms linear;
 }
@@ -74,3 +79,53 @@ padding-right:10px;
 .navbar.fixed-top{
     top:0;
 }
+
+
+.m-toper p{
+    margin:0;
+    padding:0;
+}
+
+.m-toper-wrapper a,.m-toper-wrapper p{
+    color:#fff;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+
+
+
+@media(max-width:768px){
+
+    .m-toper{
+      height:auto !important;
+  z-index: 1999;
+    }
+      
+      .m-toper-wrapper{
+          width:auto;
+          padding:10px;
+          height:auto;
+      }
+  
+  
+      .m-toper a{
+          position: relative;
+          
+      }
+  
+      .m-toper-wrapper span{
+          display: none;
+      }
+
+      .m-toper-left{
+        display:flex;
+      }
+
+      .m-toper-user{
+        display:none;
+      }
+  }

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://unicons.iconscout.com/release/v4.0.0/css/line.css');
 
 .m-toper{
     position: fixed;
@@ -8,20 +7,22 @@
     width:15%;
     height:100vh;
     background: #000;
-    z-index: 1999;
+    z-index: 9999;
     color:#fff;
     font-size:14px !important;
     font-family: 'Lato', sans-serif;
  display:flex;
+ flex-direction: column;
  align-items: center;
 
 }
 
 .m-toper::after{
-    content:'\ec60';
-    font-family: unicons-line;
-    width:50px;
+    content:'>';
+     width:50px;
     height:50px;
+    color:#fff;
+    font-weight:bold;
     position: absolute;
     top:45vh;
     right:0;
@@ -41,7 +42,7 @@
     margin:0 auto;
     display:flex;
     flex-direction: column;
-height: 40vh;
+height:0;
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:  1fr 1fr ;
@@ -83,6 +84,10 @@ grid-template-rows:  1fr 1fr ;
 .m-toper-user{
  padding:10px;
 background: rgba(0,0,0,0.3);
+display:flex;
+align-items: center;
+justify-content: center;
+margin-top:40%;
 }
 
 .m-toper .uil{
@@ -95,7 +100,33 @@ background: rgba(0,0,0,0.3);
 }
 .m-toper a{
     transition: all 250ms linear;
+    display:flex;
+    width:100%;
 }
+.m-toper span:not(.m-toper-user){
+    order:2;
+}
+
+.m-toper-user{
+    display:flex;
+}
+
+.m-toper-user p{
+    order:2;
+    margin:0;
+padding-left:0;
+}
+
+.m-toper-user img{
+    order:1;
+    margin:0;
+}
+
+.m-toper img{
+    order:1;
+    margin-right:10px;
+}
+
 .m-toper a:hover{
     opacity:0.8;
     background: rgba(0,0,0,0.3);
@@ -111,4 +142,21 @@ background: rgba(0,0,0,0.3);
 
 .m-toper:hover{
     transform: translate(0,0);
+}
+
+
+@media(max-width:768px){
+    
+    .m-toper{
+        width:80%;
+    }
+
+    .m-toper-user{
+        margin-top:20%;
+    }
+
+    .m-toper-wrapper{
+        padding:0;
+    }
+
 }
